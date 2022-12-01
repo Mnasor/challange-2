@@ -70,6 +70,7 @@ class _HomePageState extends State<HomePage> {
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 ),
               ),
+              Text("28 studnt")
             ],
           ),
           SizedBox(
@@ -89,15 +90,11 @@ class _HomePageState extends State<HomePage> {
                             const TextStyle(fontSize: 10, color: Colors.white),
                       ),
                       onPressed: () {
-                        //!--------------
-
-                     
-                      //  return showDialog(context: context, builder: (BuildContext context) {
-                      //   return Text("Hiii")
-                         
-                      //  }))
-
-                        //!-------------------------------
+                        showDialog(
+                            context: context,
+                            builder: (context) {
+                              return Icon(Icons.favorite);
+                            });
                       },
                       child: Text(
                         "Show Alert",
