@@ -93,7 +93,10 @@ class _HomePageState extends State<HomePage> {
                         showDialog(
                             context: context,
                             builder: (context) {
-                              return Icon(Icons.favorite);
+                              return Container(
+                                  height: 50,
+                                  width: 50,
+                                  child: Icon(Icons.favorite));
                             });
                       },
                       child: Text(
